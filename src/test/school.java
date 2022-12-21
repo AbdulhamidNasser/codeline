@@ -11,7 +11,7 @@ public class school {
 	boolean opt1 = true;
 	boolean opt2 = true;
 	
-	
+	  
 
 	System.out.println("Enter School Name");
 	schoolName = sc.nextLine();

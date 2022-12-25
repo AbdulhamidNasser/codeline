@@ -77,10 +77,20 @@ public class MainSchool {
 			if (sc.nextInt() != 1) {
 				opt1 = false;
 				
-				System.out.println(" School Name :" + schoolobj.getName());
+				System.out.println(" School Name : " + schoolobj.getName());
 				
 				for (Department department : departmentList) {
-					System.out.println(" Department name is " + department.getDepID());
+					System.out.println(" Department name is : " + department.getDepID());
+				}
+				
+				for (Techer tech : department.techList) {
+					System.out.println("Teacher Name is : " + tech.getTecharName());
+				}
+				
+				for (Student std : tech.studentList) {
+					
+					System.out.println("Student name is : " + std.getStudentName());
+					
 				}
 
 					
@@ -90,4 +100,6 @@ public class MainSchool {
 
 	}
 
+}
+	}
 }

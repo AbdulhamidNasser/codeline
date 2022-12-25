@@ -1,6 +1,24 @@
 package test;
-import java.util.ArrayList;
-import java.util.Scanner;
+public class school {
+	private String name;
+	
+	//Department department1 = new Department();
+	Department depobj = new Department();
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+	
+}
+
+
+/* import java.util.ArrayList;
+  import java.util.Scanner;
 public class school {
 	public static void main(String[] args) {
 	 String schoolName;
@@ -112,3 +130,4 @@ public class school {
 
 	}
 	}
+	*/

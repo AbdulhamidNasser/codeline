@@ -1,8 +1,11 @@
 package test;
 
+import java.util.ArrayList;
+
 public class Techer {
 	
 	Student stdobj =new Student();
+	ArrayList<Student> techList = new ArrayList<Student>();
 
 	String techarName;
 	//int techerAge;

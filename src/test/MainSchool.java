@@ -80,7 +80,7 @@ public class MainSchool {
 				System.out.println(" School Name : " + schoolobj.getName());
 				
 				for (Department department : departmentList) {
-					System.out.println(" Department name is : " + department.getDepID());
+					System.out.println(" Department ID is : " + department.getDepID());
 				}
 				
 				for (Techer tech : department.techList) {
@@ -90,6 +90,12 @@ public class MainSchool {
 				for (Student std : tech.studentList) {
 					
 					System.out.println("Student name is : " + std.getStudentName());
+					
+				}
+				
+				for (Course crs : std.coursList) {
+					System.out.println("Course ID is : " + crs.getCurseID());
+					System.out.println("Midterm Mark is : " + crs.getSMark());
 					
 				}
 

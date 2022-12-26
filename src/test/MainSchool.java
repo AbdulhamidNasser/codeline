@@ -95,7 +95,7 @@ public class MainSchool {
 				
 				for (Course crs : std.coursList) {
 					System.out.println("Course ID is : " + crs.getCurseID());
-					System.out.println("Midterm Mark is : " + crs.getSMark());
+					System.out.println(" Mark is : " + crs.getSMark());
 					
 				}
 
@@ -107,5 +107,6 @@ public class MainSchool {
 	}
 
 }
+		sc.close();
 	}
 }

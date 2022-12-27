@@ -1,31 +1,37 @@
 package test;
 import java.util.Scanner;
+import java.util.Stack;
 import java.util.List;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class MainStack {
     public static void main(String[] args) {
-    	StackUes stackClassObj = new StackUes(5);
     	Scanner sc = new Scanner(System.in);
-    	System.out.println("Enter Stack Items:");
-
-    	stackClassObj.push(sc.nextInt());
-    	stackClassObj.push(sc.nextInt());
-    	stackClassObj.push(sc.nextInt());
-    	stackClassObj.push(sc.nextInt());
-    	stackClassObj.push(sc.nextInt());
-        System.out.println("Topmost Element of the stack: " + stackClassObj.peek());
-        System.out.println("All Stack Items:");
-        
-        for (Integer allItem : stackClassObj.getAllItems()) {
-            System.out.println(allItem);
-        }
-
-        stackClassObj.pop();
-        System.out.println("All Stack Items After popping one item:");
-        
-        for (Integer allItem : stackClassObj.getAllItems()) {
-            System.out.println(allItem);
+    	Stack <String> sck = new Stack<String>();
+    	
+    	System.out.println("Enter School Name :");
+    	
+    	sck.push(sc.next());
+    	System.out.println("Enter School ID :");
+    	
+    	sck.push(sc.next());
+    	File fil = new File("C:\\Users\\Lenovo\\eclipse-workspace\\test\\src\\test\\new.txt");
+    	try {
+			FileWriter fw = new FileWriter(fil);
+			for(String x : sck) {
+	    		fw.write(x);
+	    	}
+			fw.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    	
+    	
+       
         }
     }
-}
